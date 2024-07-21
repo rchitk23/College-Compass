@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CollegeCompass is a static website that helps students for inforamtion about college."
+    />
+     <link rel="icon" href="image/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>Home - College Compass</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="College Compass logo" src="image/yellowbgcc1.jpg" />
+      </a>
+      <ul class="main-nav">
+        <li class="nav"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+      </ul>
+    </header>
+    <section class="search-section">
+      <img class="image" src="image/searching1.webp" alt="image"> 
+      <div class="search">
+        <h1 class="heading-primary">Find the right College...</h1>
+        <input
+          class="search-college"
+          type="text"
+          id="mySearch"
+           placeholder="Enter College Name"
+          title="Type in a name"
+        />
+      </div>
+      </section>
+         
+    <section class="college-list-section">
+      <div class="college-list">
+        <a class="college-link college">
+          <img class="college-logo" src="/IMAGE/CGClogo.jpg" alt="CGCL LOGO"/>
+          <div class="college-details">
+            <p class="college-name">Chandigarh Group of Colleges, Landran</p>
+            <p class="college-location">Landran, Mohali</p>
+          </div>
+        </a>
+        <a class="college-link college">
+          <img class="college-logo" src="/IMAGE/IITB-LOGO.png" alt="IITB LOGO" />
+          <div class="college-details">
+            <p class="college-name">Indian Institute of Technology Bombay</p>
+            <p class="college-location">Mumbai, Maharashtra</p>
+          </div>
+        </a>
+        <a class="college-link college">
+          <img class="college-logo" src="/IMAGE/IITD-LOGO.jpg" alt="IITD LOGO" />
+          <div class="college-details">
+            <p class="college-name">Indian Institute of Technology Delhi</p>
+            <p class="college-location">New Delhi, Delhi</p>
+          </div>
+        </a>
+        <a class="college-link college">
+          <img class="college-logo" src="/IMAGE/MIT-LOGO.jpg" alt="MIT LOGO" />
+          <div class="college-details">
+            <p class="college-name">Manipal Institute of Technology</p>
+            <p class="college-location">Manipal, Karnataka</p>
+          </div>
+        </a>
+        <a class="college-link college">
+          <img class="college-logo" src="/IMAGE/VIT-LOGO.png" alt="VIT LOGO" />
+          <div class="college-details">
+            <p class="college-name">Vellore Institute of Technology</p>
+            <p class="college-location">Vellore, Tamil Nadu</p>
+          </div>
+        </a>
+        <a class="college-link college">
+          <img class="college-logo" src="/IMAGE/IIITH-LOGO.jpg" alt="IIITH LOGO" />
+          <div class="college-details">
+            <p class="college-name">
+              International Institute of Information Technology Hyderabad
+            </p>
+            <p class="college-location">Hyderabad, Telangana</p>
+          </div>
+        </a>
+        <a class="college-link college" >
+          <img class="college-logo" src="/IMAGE/BITS-LOGO.png" alt="BITS LOGO" />
+          <div class="college-details">
+            <p class="college-name">
+              Birla Institute of Technology & Science -Pilani
+            </p>
+            <p class="college-location">Pilani, Rajasthan</p>
+          </div>
+        </a>
+        <a class="college-link college">
+          <img class="college-logo" src="/IMAGE/IITK-LOGO.png" alt="IITK LOGO" />
+          <div class="college-details">
+            <p class="college-name">Indian Institute of Technology Kanpur</p>
+            <p class="college-location">Kanpur, Uttar Pradesh</p>
+          </div>
+        </a>
+        <a class="college-link college" href="/college-details/NITT.html">
+          <img class="college-logo" src="/IMAGE/NITT-LOGO.jpg" alt="NITT LOGO" />
+          <div class="college-details">
+            <p class="college-name">
+              National Institute of Technology Tiruchirappalli
+            </p>
+            <p class="college-location">Tiruchirappalli, Tamil Nadu</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- **************************************************** -->
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Get your college on the list!</h2>
+            <p class="cta-text">
+              Cannot find the college you are looking for, just send us the
+              details and we will get it done for you.
+            </p>
+            <form class="cta-form" action="#">
+              <div>
+                <label for="full-name">College Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Chandigarh Engineering College"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="abc@education.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+
+                <select id="select-where" required>
+                  <option value="">Please Choose on Option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">Youtube Videos</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <button class="btn btn--form">Sign up now</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- *********************************************************** -->
+
+    <footer class="footer" id="contact-me">
+      <div class="grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer--link">
+            <img
+              class="footer-logo"
+              alt="College Compass logo"
+              src="/IMAGE/yellowbgcc1.jpg"
+            />
+          </a>
+            </div>
+        <div class="adress-col">
+          <p class="footer-heading">Contact </p>
+          <address class="contacts">
+          <p>
+           <a class="footer-link">+91 7764912458</a>
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About College Compass</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    </body>
+</html>
